@@ -1,1 +1,29 @@
 @import './normalize.scss';
+@import './vars.scss';
+
+.header {
+  height: 380px;
+  width: 100%;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0.4)),
+      color-stop(40%, rgba(142, 146, 191, 0.696203)),
+      color-stop(70%, rgba(74, 81, 153, 0.873642)),
+      to(#1a237e)
+    ),
+    url(../images/backwater.jpg);
+}
+
+.user-menu {
+  height: 35px;
+  background-color: $mainColor;
+}
+
+.products {
+  height: 350px;
+  padding: 20px;
+  color: #ffffff;
+  background-color: $mainColor;
+}
