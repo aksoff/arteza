@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
 html {
   font-size: 10px;
 }
@@ -20,8 +21,18 @@ section {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 380px;
   width: 100%;
+  color: #ffffff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), color-stop(40%, rgba(142, 146, 191, 0.696203)), color-stop(70%, rgba(74, 81, 153, 0.873642)), to(#1a237e)), url(../images/backwater.jpg);
 }
 
@@ -35,5 +46,10 @@ section {
   padding: 20px;
   color: #ffffff;
   background-color: #1a237e;
+}
+
+.logo {
+  font-family: Merriweather;
+  font-size: 4rem;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,9 +1,14 @@
 @import './normalize';
 @import './vars';
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 380px;
   width: 100%;
+  color: #ffffff;
   background: -webkit-gradient(
       linear,
       left top,
@@ -26,4 +31,9 @@
   padding: 20px;
   color: #ffffff;
   background-color: $mainColor;
+}
+
+.logo {
+  font-family: Merriweather;
+  font-size: 4rem;
 }
