@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,IAAI;CAChB;;AAED,AAAA,EAAE,CAAC;EACD,SAAS,EAAE,MAAM;CAClB;;AAED,AAAA,EAAE,CAAC;EACD,SAAS,EAAE,MAAM;CAClB",
+    "sources": [
+        "../scss/index.scss",
+        "../scss/normalize.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
