@@ -1,7 +1,12 @@
 @import './normalize';
 @import './vars';
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
+.container {
+  margin: 0 auto;
+  max-width: 1270px;
+}
 .header {
   display: flex;
   align-items: center;
@@ -21,9 +26,51 @@
     url(../images/backwater.jpg);
 }
 
-.user-menu {
-  height: 35px;
+.user-header {
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  color: #ffffff;
   background-color: $mainColor;
+}
+
+.user-header__menu {
+  margin: 0;
+  flex-direction: row-reverse;
+
+  padding: 5px 0 5px 25px;
+  list-style: none;
+  margin-right: 152px;
+}
+
+.user-header__menu li {
+  line-height: 1;
+  display: inline;
+}
+
+.user-header__menu li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.user-header__menu li a:hover {
+  text-decoration: underline;
+}
+
+.logo__title {
+  display: block;
+  font-family: Merriweather;
+  font-size: 4.8rem;
+  padding: 8px;
+}
+
+.logo__text {
+  display: block;
+  font-family: Roboto;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.colorAqua {
+  color: $colorAqua;
 }
 
 .products {
@@ -31,9 +78,4 @@
   padding: 20px;
   color: #ffffff;
   background-color: $mainColor;
-}
-
-.logo {
-  font-family: Merriweather;
-  font-size: 4rem;
 }

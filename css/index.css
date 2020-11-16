@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 html {
   font-size: 10px;
 }
@@ -20,6 +21,11 @@ section {
   margin: 0;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1270px;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,9 +42,54 @@ section {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), color-stop(40%, rgba(142, 146, 191, 0.696203)), color-stop(70%, rgba(74, 81, 153, 0.873642)), to(#1a237e)), url(../images/backwater.jpg);
 }
 
-.user-menu {
-  height: 35px;
+.user-header {
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  color: #ffffff;
   background-color: #1a237e;
+}
+
+.user-header__menu {
+  margin: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 5px 0 5px 25px;
+  list-style: none;
+  margin-right: 152px;
+}
+
+.user-header__menu li {
+  line-height: 1;
+  display: inline;
+}
+
+.user-header__menu li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.user-header__menu li a:hover {
+  text-decoration: underline;
+}
+
+.logo__title {
+  display: block;
+  font-family: Merriweather;
+  font-size: 4.8rem;
+  padding: 8px;
+}
+
+.logo__text {
+  display: block;
+  font-family: Roboto;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.colorAqua {
+  color: #4eb7fd;
 }
 
 .products {
@@ -46,10 +97,5 @@ section {
   padding: 20px;
   color: #ffffff;
   background-color: #1a237e;
-}
-
-.logo {
-  font-family: Merriweather;
-  font-size: 4rem;
 }
 /*# sourceMappingURL=index.css.map */
