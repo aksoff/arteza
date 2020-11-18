@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 html {
   font-size: 10px;
 }
@@ -7,6 +7,7 @@ html {
 body {
   margin: 0;
   max-width: 1440px;
+  font-family: 'Montserrat', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
@@ -21,9 +22,27 @@ section {
   margin: 0;
 }
 
+.clearfix::after {
+  clear: both;
+  display: table;
+  content: ' ';
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.colorAqua {
+  color: #4eb7fd;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1270px;
+}
+
+section {
+  height: 400px;
 }
 
 .header {
@@ -36,28 +55,30 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 380px;
+  height: 350px;
   width: 100%;
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), color-stop(40%, rgba(142, 146, 191, 0.696203)), color-stop(70%, rgba(74, 81, 153, 0.873642)), to(#1a237e)), url(../images/backwater.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), color-stop(40%, rgba(142, 146, 191, 0.696203)), color-stop(60%, rgba(74, 81, 153, 0.873642)), to(#1a237e)), url(../images/backwater.jpg);
 }
 
 .user-header {
-  font-family: Montserrat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   font-size: 1.4rem;
   color: #ffffff;
   background-color: #1a237e;
 }
 
 .user-header__menu {
-  margin: 0;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  margin: 0 10%;
+  max-width: 1270px;
   padding: 5px 0 5px 25px;
   list-style: none;
-  margin-right: 152px;
 }
 
 .user-header__menu li {
@@ -88,14 +109,36 @@ section {
   text-align: center;
 }
 
-.colorAqua {
-  color: #4eb7fd;
+.main-menu {
+  display: flow-root;
+  font-size: 1.4rem;
+  background-color: #1a237e;
 }
 
-.products {
+.main-menu li {
+  padding: 0 40px 0 0;
+  display: inline;
+}
+
+.main-menu li a {
+  text-decoration: none;
+  color: #ffdd00;
+  font-weight: 500;
+}
+
+.catalog {
   height: 350px;
   padding: 20px;
   color: #ffffff;
+  background-color: #1a237e;
+}
+
+.info {
+  background-color: #f5f5f5;
+}
+
+footer {
+  height: 200px;
   background-color: #1a237e;
 }
 /*# sourceMappingURL=index.css.map */

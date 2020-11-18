@@ -1,17 +1,30 @@
 @import './normalize';
 @import './vars';
+@import './utils';
+@import './text';
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+.colorAqua {
+  color: $colorAqua;
+}
 
 .container {
   margin: 0 auto;
   max-width: 1270px;
 }
+
+//temporary section
+section {
+  height: 400px;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 380px;
+  height: 350px;
   width: 100%;
   color: #ffffff;
   background: -webkit-gradient(
@@ -20,26 +33,25 @@
       left bottom,
       from(rgba(255, 255, 255, 0.4)),
       color-stop(40%, rgba(142, 146, 191, 0.696203)),
-      color-stop(70%, rgba(74, 81, 153, 0.873642)),
+      color-stop(60%, rgba(74, 81, 153, 0.873642)),
       to(#1a237e)
     ),
     url(../images/backwater.jpg);
 }
 
 .user-header {
-  font-family: Montserrat;
+  display: flex;
+  flex-direction: row-reverse;
   font-size: 1.4rem;
   color: #ffffff;
   background-color: $mainColor;
 }
 
 .user-header__menu {
-  margin: 0;
-  flex-direction: row-reverse;
-
+  margin: 0 10%;
+  max-width: 1270px;
   padding: 5px 0 5px 25px;
   list-style: none;
-  margin-right: 152px;
 }
 
 .user-header__menu li {
@@ -69,13 +81,34 @@
   text-align: center;
 }
 
-.colorAqua {
-  color: $colorAqua;
+.main-menu {
+  display: flow-root;
+  font-size: 1.4rem;
+  background-color: $mainColor;
 }
 
-.products {
+.main-menu li {
+  padding: 0 40px 0 0;
+  display: inline;
+}
+.main-menu li a {
+  text-decoration: none;
+  color: #ffdd00;
+  font-weight: 500;
+}
+
+.catalog {
   height: 350px;
   padding: 20px;
   color: #ffffff;
+  background-color: $mainColor;
+}
+
+.info {
+  background-color: #f5f5f5;
+}
+
+footer {
+  height: 200px;
   background-color: $mainColor;
 }
