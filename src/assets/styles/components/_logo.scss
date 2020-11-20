@@ -1,0 +1,18 @@
+.logo {
+  padding: 47px 0;
+  &__text{
+    @include logo_text($white)
+  }
+
+  &__title {
+    @include logo_title($white)
+  }
+  
+  & span {
+    color: $aqua
+  }
+
+  &__slogan {
+    @include logo_text(#fafafa)
+  }
+}

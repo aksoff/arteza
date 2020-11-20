@@ -1,0 +1,27 @@
+.top-menu {
+  @include menuText;
+  background-color: $darkBackground;
+}
+.navigation {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.navigation ul {
+  list-style: none;
+  padding: 5px;
+}
+
+.navigation ul li {
+  display: inline;
+}
+
+.navigation ul li a{
+  @include menuLink;
+
+}
+
+.navigation ul li a:hover{
+  @include menuLink;
+  text-decoration: underline;
+}
+
