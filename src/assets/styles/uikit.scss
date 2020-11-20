@@ -5,3 +5,21 @@
 h1 {
   @include h1(#ccc)
 }
+
+h2 {
+  @include h2
+}
+
+h3 {
+  @include h3
+}
+
+.logo_title {
+  @include logo_title(rgb(150, 176, 206))
+}
+.logo_text {
+  @include logo_text(#ccc)
+}
+.wrapper {
+  margin: 20px;
+}

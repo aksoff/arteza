@@ -2,6 +2,74 @@
 @import './components';
 @import './layout';
 
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 h1 {
   @include h1
+}
+
+h2 {
+  @include h2
+}
+
+.top-menu {
+  @include menuText;
+  background-color: $darkBackground;
+}
+.navigation {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.navigation ul {
+  list-style: none;
+  padding: 5px;
+}
+
+.navigation ul li {
+  display: inline;
+}
+
+.navigation ul li a{
+  @include menuLink;
+
+}
+
+.navigation ul li a:hover{
+  @include menuLink;
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 100%;
+  color: #ffffff;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0.4)),
+      color-stop(40%, rgba(142, 146, 191, 0.696203)),
+      color-stop(60%, rgba(74, 81, 153, 0.873642)),
+      to(#1a237e)
+    ),
+    url(../images/water.jpg);
+}
+
+.products {
+  background-color: $darkBackground;
+  height: 400px;
 }
