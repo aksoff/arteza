@@ -1,3 +1,7 @@
 .cart {
+  width: 45px;
+  height: 45px;
   color: $yellow;
+  background: no-repeat url('../images/icons/shopping-cart.png');
+  background-size: contain;
 }
