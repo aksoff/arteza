@@ -1,3 +1,23 @@
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+ 
+  @media ($tablet) {
+    width: 750px;
+  }
+
+  @media ($desktop) {
+    width: 970px;
+  }
+ 
+  @media ($projector) {
+    width: 1170px;
+  }
+}
+
 .spacer {
   flex: 1 1 auto;
 }

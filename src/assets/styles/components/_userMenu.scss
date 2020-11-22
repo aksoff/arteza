@@ -2,26 +2,25 @@
   @include menuText;
   background-color: $darkBackground;
 }
-.navigation {
+.auth-block {
   display: flex;
   flex-direction: row-reverse;
-}
-.navigation ul {
-  list-style: none;
-  padding: 5px;
-}
 
-.navigation ul li {
-  display: inline;
+  & ul {
+    list-style: none;
+    padding: 5px;  
+  }
+
+  & ul li {
+    display: inline;
+  }
+
+  & ul li a {
+    @include menuLink;
+  }
+
+  & ul li a:hover{
+    @include menuLink;
+    text-decoration: underline;
+  }
 }
-
-.navigation ul li a{
-  @include menuLink;
-
-}
-
-.navigation ul li a:hover{
-  @include menuLink;
-  text-decoration: underline;
-}
-
