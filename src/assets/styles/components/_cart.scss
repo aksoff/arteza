@@ -2,6 +2,21 @@
   width: 45px;
   height: 45px;
   color: $yellow;
-  background: no-repeat url('../images/icons/shopping-cart.png');
-  background-size: contain;
+  position: relative;
+  background: no-repeat url('../images/icons/water-y.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.cart::before {
+  content: '2';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: bolder;
+  background-color: red;
+  border-radius: 7px;
+  bottom: 0;
 }
