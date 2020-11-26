@@ -2,7 +2,19 @@
   @include mainMenu;
   display: none;
 
-  @media($desktop) {
+  @media($tablet) {
     display: block;
+  }@media($desktop) {
+    display: block;
+  }
+}
+
+.nav-toggle {
+  display: block;
+
+  @media($tablet) {
+    display: none;
+  }@media($desktop) {
+    display: none;
   }
 }
