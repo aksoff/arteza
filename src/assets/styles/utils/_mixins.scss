@@ -45,15 +45,13 @@
 }
 
 @mixin logo_title($color: $white) {
-  font-size: 4.8rem;
+  font-size: 1.8rem;
   color: $color;
   font-family: $logoFont;
-  text-align: center;
   text-transform: uppercase;
-  margin: 15px 0;
 
   @media($tablet) {
-    font-size: 3.8rem;
+    font-size: 1.8rem;
   }
 }
 

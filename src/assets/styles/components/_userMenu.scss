@@ -1,6 +1,5 @@
 .header__top {
   @include menuText;
-  background-color: $darkBackground;
 }
 .auth-block {
   display: flex;

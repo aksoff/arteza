@@ -1,5 +1,4 @@
 .logo {
-  padding: 47px 0;
   &__text{
     @include logo_text($white)
   }

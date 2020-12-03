@@ -1,18 +1,9 @@
 .header {
-  height: 350px;
+  height: 600px;
   width: 100%;
   color: #ffffff;
   position: relative;
-  background: /*-webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(255, 255, 255, 0.4)),
-      color-stop(30%, rgba(142, 146, 191, 0.696203)),
-      color-stop(60%, rgba(74, 81, 153, 0.873642)),
-      to(#1a237e)
-    ),*/ url(../images/water.jpg);
-
+  background: linear-gradient(180deg, #2C6DCB 38.11%, rgba(44, 109, 203, 0) 151.89%);
   &__nav {
     display: flex;
     justify-content: space-between;
