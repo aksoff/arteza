@@ -1,7 +1,4 @@
 .logo {
-  &__text{
-    @include logo_text($white)
-  }
 
   &__title {
     @include logo_title($white)
@@ -11,7 +8,4 @@
     color: $aqua
   }
 
-  &__slogan {
-    @include logo_text(#fafafa)
-  }
 }
