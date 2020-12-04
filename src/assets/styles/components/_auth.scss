@@ -1,0 +1,19 @@
+.auth-block {
+ 
+  a {
+    @include menuLink;
+    margin-bottom: 5px;
+    position: relative;
+  }
+
+  a:before {
+    content: url(../images/icons/user.png);
+    position: absolute;
+    bottom: -2px;
+    left: -30px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
