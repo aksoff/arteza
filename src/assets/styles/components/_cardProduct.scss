@@ -4,7 +4,7 @@
   max-width: 190px;
   position: relative;
   margin-top: 210px;
-  padding: 160px 0 0;
+  padding: 160 1 1;
   border: 1px solid $cyan;
   border-radius: 5px;
 
@@ -53,40 +53,43 @@
     align-items: center;
     width: 100%;
     height: 38px;
-    margin: 5px 0;
+    margin: 5px 0 0;
+    padding: 0 5px;
     background-color: $yellow;
     border-radius: 4px;
+    
+      a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 0 5px;
+        border-radius: 10%;
+      }
+  
+      a:hover {
+        text-decoration: none;
+        background-color: #ccc;
+      }
+  
+      input {
+        display: inline-block;
+        border-radius: 100%;
+        width: 22px;
+        text-align: center;
+        border: none;
+        height: 22px;
+        background-color: $white;
+        color: $black;
+        font-weight: 700;
+        font-size: 1.6rem;
+      }
+  
+      input:active, :hover, :focus {
+        outline: 0 !important;
+        outline-offset: 0 !important;
+      }
 
-    a {
-      text-decoration: none;
-      font-size: 1.8rem;
-      font-weight: 600;
-      padding: 0 5px;
-      border-radius: 10%;
-    }
-
-    a:hover {
-      text-decoration: none;
-      background-color: #ccc;
-    }
-
-    input {
-      display: inline-block;
-      border-radius: 100%;
-      width: 22px;
-      text-align: center;
-      border: none;
-      height: 22px;
-      background-color: $white;
-      color: $black;
-      font-weight: 700;
-      font-size: 1.6rem;
-    }
-
-    input:active, :hover, :focus {
-      outline: 0 !important;
-      outline-offset: 0 !important;
-    }
+    
     
       
   }
