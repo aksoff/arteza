@@ -36,14 +36,12 @@
   &__title {
     font-size: 1.6rem;
     font-weight: 500;
-    text-align: center;
     color: $yellow;
   }
 
   &__desc {
     font-size: 1rem;
     color: $white;
-    text-align: center;
     padding-bottom: 15px;
   }
 
@@ -94,6 +92,9 @@
       
   }
 
+  &__footer:hover {
+    background-color: $yellowHover;
+  }
   &__img:hover {
     height: 332;
     position: absolute;
@@ -103,23 +104,40 @@
     width: calc(100% - 10px);
     transition: all 0.2s ease-out 0.1s;
   }
+  &__info {
+    padding: 10px;
+    
+    .product__price {
+      display: inline-flex;
+      color: $white;
+      
+      .product__cost {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
   
-  &__cost {
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding-left: 10px;
-  }
-
-  &__cost::after {
-    font-family: "Font Awesome 5 Free"; 
-    // content: "\f099";
+      .product__old-price {
+        font-size: 1.2rem;
+        display: block;
+        margin-left: 10px;
+        text-decoration: line-through;
+      }
+  
+    }
+  
   }
 
   &__buy {
-    width: 24px;
+  /*  width: 24px;
     height: 24px;
     background: url('../images/icons/add-to-cart.png') no-repeat;
     background-size: contain;
+  */
+    font-size: 1.4rem;
+    font-weight: 600;
     margin-right: 10px;   
-  }    
+    cursor: pointer;
+  }   
+  
 }
