@@ -4,7 +4,11 @@
 
   @media($tablet) {
     display: block;
-  }@media($desktop) {
+    padding: 0px;
+    
+  }
+  
+  @media($desktop) {
     display: block;
   }
 }
