@@ -1,25 +1,12 @@
 .header__top {
   @include menuText;
 }
-.authblock {
-  display: flex;
-  flex-direction: row-reverse;
 
-  & ul {
-    list-style: none;
-    padding: 5px;  
-  }
+.user-block {
+  display: inline-flex;
+  align-items: center;
+}
 
-  & ul li {
-    display: inline;
-  }
-
-  & ul li a {
-    @include menuLink;
-  }
-
-  & ul li a:hover{
-    @include menuLink;
-    text-decoration: underline;
-  }
+.auth-block {
+  margin: 0 25px;
 }
